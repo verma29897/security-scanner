@@ -1,0 +1,7 @@
+{
+  "allowed_hosts": ["github.com", "gitlab.example.com"],
+  "max_file_bytes": 2097152,
+  "max_files": 100000,
+  "max_repository_bytes": 524288000,
+  "ai": {"enabled": false, "external_transmission": false}
+}

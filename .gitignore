@@ -1,0 +1,5 @@
+.env
+codeaudit-report.json
+codeaudit-report.html
+test-*.json
+test-*.html

@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0.0",
+  "repository": {"url": "https://github.com/example/insecure.git", "commit_sha": "0123456789abcdef0123456789abcdef01234567", "default_branch": "main"},
+  "scanned_at": "2026-10-12T00:00:00Z",
+  "scope": "default branch HEAD snapshot only; Git history and submodules excluded",
+  "languages": {"Go": 1},
+  "frameworks": [],
+  "capabilities": [],
+  "security_inventory": [{"name": "Authentication", "status": "unknown", "notes": "Route and middleware tracing is not implemented."}],
+  "findings": [{"id":"CA-acde12345678","rule_id":"CA-SECRET-001","rule_version":"1.0.0","category":"secrets","status":"partial_or_weak","severity":"critical","confidence":"high","location":{"file":"main.go","start_line":5,"end_line":5},"redacted_evidence":"var apiKey = \"[REDACTED]\"","rationale":"A credential-like value is embedded in source.","suggested_fix":"Remove and rotate it; use a secret manager.","verification_steps":"Confirm revocation and rescan.","evidence_origin":"deterministic_rule"}],
+  "limitations": ["Static rules do not prove exploitability or absence of controls."],
+  "ai_assistance_provenance": {"result":"unknown","limitations":"No trusted provenance record was found; authorship cannot be inferred from source style."},
+  "engine": {"name":"CodeAudit","version":"0.1.0","ruleset":"2026.10"}
+}
